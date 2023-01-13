@@ -1,7 +1,49 @@
-/** CSS STYLE **/
-
-.hello {
-  display: block;
-
-  color: #fff;
+/* Цвета
+Белый: #fff
+Полупрозрачный белый: #d7ccc0
+Светлый: #f5f4f0
+Основной: #fe8a02
+Основной тёмный: #42413c
+Тёмный: #2a2626
+Полупрозрачный тёмный: #908d8b
+Коричневый: #b09a81
+Синий: #1085c5 */
+* {
+  box-sizing: border-box;
 }
+@font-face {
+  font-family: "Necha";
+  src: url(../fonts/Neucha-Regular.ttf);
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+body {
+  font-family: "OpenSans-Regular", sans-serif;
+
+
+
+font-size: 16px;
+line-height: 1.6em;
+color: #2A2626;
+}
+section {
+  text-align: center;
+  margin: 100px 0;
+  width: 1110px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+line-height: 1.2em;
+}
+h1 {
+  font-size: 72px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 34px;
+  }

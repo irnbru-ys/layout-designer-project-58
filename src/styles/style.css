@@ -8,42 +8,158 @@
 Полупрозрачный тёмный: #908d8b
 Коричневый: #b09a81
 Синий: #1085c5 */
+
+:root {
+  --color-white: #fff;
+  --color-white-translucent: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-main: #fe8a02;
+  --color-main-dark: #42413c;
+  --color-dark: #2a2626;
+  --color-dark-translucent: #908d8b;
+  --color-brown: #b09a81;
+  --color-blue: #1085c5;
+}
+
 * {
   box-sizing: border-box;
 }
+
 @font-face {
-  font-family: "Necha";
-  src: url(../fonts/Neucha-Regular.ttf);
+  font-family: Neucha;
+  src: url("../fonts/Neucha-Regular.ttf");
 }
 
 @font-face {
-  font-family: "OpenSans-Regular";
-  src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf");
 }
+
 body {
-  font-family: "OpenSans-Regular", sans-serif;
+  margin: 0;
+  padding: 0;
 
-
-
-font-size: 16px;
-line-height: 1.6em;
-color: #2A2626;
-}
-section {
-  text-align: center;
-  margin: 100px 0;
-  width: 1110px;
+  color: var(--color-dark);
+  font-size: 16px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-line-height: 1.2em;
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
+
+.cd-programming {
+  height: 914px;
+  overflow: hidden;
+}
+
+.bg {
+  background-color: var(--color-light);
+}
+
+.bg::before {
+  position: absolute;
+  left: 50%;
+
+  width: 1350px;
+  height: 914px;
+
+  background: url("../image/background.png") center/cover no-repeat;
+  transform: translateX(-50%);
+  opacity: 0.1;
+
+  content: "";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-family: Neucha, cursive;
+  line-height: 1.2em;
+}
+
 h1 {
   font-size: 72px;
-  }
-  h2 {
-    font-size: 60px;
-  }
-  h3 {
-    font-size: 34px;
-  }
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.color-main {
+  color: var(--color-main);
+}
+
+.inline-block {
+  display: inline-block;
+
+  max-width: 555px;
+}
+
+.inline-block:not(:last-child) {
+  margin-right: 30px;
+}
+
+.right-part {
+  position: relative;
+
+  float: right;
+
+  width: 555px;
+}
+
+.programming-img-rp {
+  position: absolute;
+  top: -38px;
+  right: -238px;
+
+  height: 525px;
+}
+
+.posrel {
+  position: relative;
+
+  margin-bottom: 294px;
+}
+
+.posabs {
+  position: absolute;
+  top: 176px;
+  left: 0;
+  z-index: 1;
+
+  width: 110%;
+}
+
+.rp-text {
+  margin-bottom: 40px;
+  padding-top: 465px;
+}
+
+.cd-programming-link {
+  padding: 12px 24px;
+
+  color: var(--color-white);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: var(--color-main);
+}

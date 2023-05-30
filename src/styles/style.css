@@ -125,7 +125,7 @@ p {
   width: 555px;
 }
 
-.programming-img-rp {
+.cd-programming-img-rp {
   position: absolute;
   top: -38px;
   right: -238px;
@@ -162,4 +162,26 @@ p {
   text-decoration: none;
 
   background-color: var(--color-main);
+}
+
+/* ВТОРАЯ СЕКЦИЯ */
+
+.about-video-h2 {
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.about-video-subtitle {
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.video {
+  display: block;
+
+  margin: 0 auto;
+
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }

@@ -200,6 +200,7 @@ p {
 
 .navigation-item-main-title {
   font-size: 52px;
+  font-family: Neucha, cursive;
 }
 
 .d-flex {
@@ -225,9 +226,9 @@ p {
 
   padding: 24px;
 
-  text-decoration: none;
-
   line-height: 1;
+
+  text-decoration: none;
 }
 
 .pg-0 {
@@ -236,18 +237,13 @@ p {
 
 .bg-color-lite {
   background-color: var(--color-light);
-} 
-
-.navigation-item-main-title {
-  font-size: 52px;
-  font-family: "Neucha", cursive;
 }
 
 .navigation-item-title {
   margin-bottom: 40px;
 
   font-size: 64px;
-  font-family: "Neucha";
+  font-family: Neucha, cursive;
 }
 
 .navigation-item-subtitle {

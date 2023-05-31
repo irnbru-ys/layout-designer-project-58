@@ -52,7 +52,7 @@ body {
 }
 
 .cd-programming {
-  height: 914px;
+  min-height: 914px;
   overflow: hidden;
 }
 
@@ -105,6 +105,10 @@ p {
 
 .color-main {
   color: var(--color-main);
+}
+
+.color-white {
+  color: var(--color-white);
 }
 
 .inline-block {
@@ -184,4 +188,70 @@ p {
   margin: 0 auto;
 
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+/* ТРЕТЬЯ СЕКЦИЯ */
+
+.navigation {
+  min-height: 891px;
+
+  background-color: var(--color-main-dark);
+}
+
+.navigation-item-main-title {
+  font-size: 52px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.grid-gap-20-30 {
+  grid-gap: 20px 30px;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.navigation-item {
+  display: block;
+  width: 350px;
+  min-height: 348px;
+
+  padding: 24px;
+
+  text-decoration: none;
+
+  line-height: 1;
+}
+
+.pg-0 {
+  padding: 0;
+}
+
+.bg-color-lite {
+  background-color: var(--color-light);
+} 
+
+.navigation-item-main-title {
+  font-size: 52px;
+  font-family: "Neucha", cursive;
+}
+
+.navigation-item-title {
+  margin-bottom: 40px;
+
+  font-size: 64px;
+  font-family: "Neucha";
+}
+
+.navigation-item-subtitle {
+  padding-bottom: 16px;
+
+  color: var(--color-main);
 }

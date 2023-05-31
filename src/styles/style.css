@@ -49,6 +49,8 @@ body {
   width: 1140px;
   margin: 0 auto;
   padding: 100px 0;
+
+  line-height: 1;
 }
 
 .cd-programming {
@@ -98,6 +100,18 @@ h3 {
   font-size: 34px;
 }
 
+h4 {
+  color: var(--color-dark-translucent);
+
+  font-size: 24px;
+}
+
+h5 {
+  color: var(--color-white);
+
+  font-size: 14px;
+}
+
 p {
   margin-top: 0;
   padding-top: 0;
@@ -109,6 +123,10 @@ p {
 
 .color-white {
   color: var(--color-white);
+}
+
+.bg-color-brown {
+  background: var(--color-brown);
 }
 
 .inline-block {
@@ -250,4 +268,64 @@ p {
   padding-bottom: 16px;
 
   color: var(--color-main);
+}
+
+/* ЧЕТВЁРТАЯ СЕКЦИЯ */
+
+.ikea-effect {
+  min-height: 905px;
+}
+
+.col-2 {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.img-shadow {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.ikea-effect-title-box {
+  font-family: Neucha, cursive;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.subtitle-col {
+  margin-bottom: 30px;
+
+  font-size: 72px;
+}
+
+.text-col {
+  font-size: 34px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.line-col {
+  height: 26px;
+
+  padding: 5px 0 5px 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+
+  text-transform: uppercase;
+}
+
+.break > div {
+  line-height: 26px;
+}
+
+.break > div:nth-child(2) {
+  break-inside: avoid;
 }

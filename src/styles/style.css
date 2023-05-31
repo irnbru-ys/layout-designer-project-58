@@ -49,8 +49,6 @@ body {
   width: 1140px;
   margin: 0 auto;
   padding: 100px 0;
-
-  line-height: 1;
 }
 
 .cd-programming {
@@ -66,8 +64,11 @@ body {
   position: absolute;
   left: 50%;
 
-  width: 1350px;
-  height: 914px;
+  /* width: 1350px;
+  height: 914px; */
+
+  width: 1440px;
+  height: 955px;
 
   background: url("../image/background.png") center/cover no-repeat;
   transform: translateX(-50%);
@@ -125,8 +126,20 @@ p {
   color: var(--color-white);
 }
 
+.color-brown {
+  color: var(--color-brown);
+}
+
+.color-white-translucent {
+  color: var(--color-white-translucent);
+}
+
 .bg-color-brown {
   background: var(--color-brown);
+}
+
+.bg-color-white {
+  background-color: var(--color-white);
 }
 
 .inline-block {
@@ -188,6 +201,12 @@ p {
 
 /* ВТОРАЯ СЕКЦИЯ */
 
+.about-video {
+  position: relative;
+
+  z-index: 1;
+}
+
 .about-video-h2 {
   margin-bottom: 30px;
 
@@ -237,14 +256,16 @@ p {
   flex-wrap: wrap;
 }
 
+.navigation-item-main {
+  line-height: 1;
+}
+
 .navigation-item {
   display: block;
   width: 350px;
   min-height: 348px;
 
   padding: 24px;
-
-  line-height: 1;
 
   text-decoration: none;
 }
@@ -285,8 +306,9 @@ p {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
-.ikea-effect-title-box {
+.title-box {
   font-family: Neucha, cursive;
+  line-height: 1;
 }
 
 .ml-40 {
@@ -296,7 +318,7 @@ p {
 .subtitle-col {
   margin-bottom: 30px;
 
-  font-size: 72px;
+  font-size: 60px;
 }
 
 .text-col {
@@ -319,6 +341,8 @@ p {
   font-weight: 700;
   font-size: 14px;
 
+  line-height: 1.1;
+
   text-transform: uppercase;
 }
 
@@ -328,4 +352,15 @@ p {
 
 .break > div:nth-child(2) {
   break-inside: avoid;
+}
+
+/* ПЯТАЯ СЕКЦИЯ */
+
+.premature-optimization {
+  min-height: 855px;
+}
+
+.premature-optimization-img {
+  position: relative;
+  right: 22px;
 }

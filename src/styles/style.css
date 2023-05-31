@@ -360,7 +360,7 @@ p {
   min-height: 855px;
 }
 
-.premature-optimization-img {
+.img-r-r {
   position: relative;
   right: 22px;
 }
@@ -368,5 +368,11 @@ p {
 /* ШЕСТАЯ СЕКЦИЯ */
 
 .distortion-of-novelty {
+  position: relative;
+}
+
+/* СЕДЬМАЯ СЕКЦИЯ */
+
+.hyperbolic-depreciation {
   position: relative;
 }

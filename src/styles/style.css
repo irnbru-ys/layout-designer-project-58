@@ -382,3 +382,98 @@ p {
 .errors-in-planning {
   position: relative;
 }
+
+/* FOOTER */
+
+.footer {
+  position: relative;
+
+  background-color: var(--color-white);
+}
+
+.send-box {
+  height: 190px;
+  margin-bottom: 60px;
+
+  background-color: var(--color-main-dark);
+}
+
+.footer-h3 {
+  padding: 55px 0 55px 55px;
+  break-inside: avoid;
+
+  color: var(--color-white);
+}
+
+.form-box {
+  padding: 40px 0;
+
+  color: var(--color-white);
+}
+
+.form-input {
+  min-width: 423px;
+  height: 50px;
+  padding: 15px;
+}
+
+::placeholder {
+  color: #757575;
+
+  opacity: 0.5;
+}
+
+.input-text-up {
+  font-size: 18px;
+}
+
+.input-text-down {
+  font-size: 12px;
+}
+
+.input-text-down > a {
+  color: var(--color-white);
+}
+
+button {
+  position: relative;
+  top: -4px;
+  right: 4px;
+  z-index: 1;
+
+  width: 70px;
+  height: 50px;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--color-main);
+  border: none;
+
+  cursor: pointer;
+}
+
+button::before {
+  position: absolute;
+  top: 15px;
+  right: 21px;
+  z-index: 100;
+
+  width: 24px;
+  height: 24px;
+
+  background: url("../image/send.svg") center / cover no-repeat;
+
+  content: "";
+}
+
+.footer-down {
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-down > div:not(:last-child) {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+}

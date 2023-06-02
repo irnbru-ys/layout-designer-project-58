@@ -208,13 +208,13 @@ p {
 }
 
 .video {
-  display: block;
-
   position: absolute;
   top: 325px;
   left: 50%;
+
+  display: block;
+
   transform: translateX(-50%);
-  
 
   margin: 0 auto;
 

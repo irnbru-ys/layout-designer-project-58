@@ -46,16 +46,14 @@ body {
 }
 
 .container {
-  width: 1110px;
+  position: relative;
+
+  max-width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
 }
 
 .cd-programming {
-  position: relative;
-
-  min-height: 914px;
-
   overflow: hidden;
 }
 
@@ -69,21 +67,22 @@ body {
 }
 
 .bg {
+  position: relative;
+  z-index: 1;
+
   background-color: var(--color-light);
 }
 
 .bg::before {
   position: absolute;
-  left: 50%;
-
-  /* width: 1350px;
-  height: 914px; */
-
-  width: 1440px;
-  height: 955px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 
   background: url("../image/background.png") center/cover no-repeat;
-  transform: translateX(-50%);
+
   opacity: 0.1;
 
   content: "";
@@ -106,6 +105,8 @@ h1 {
 }
 
 h2 {
+  color: var(--color-main);
+
   font-size: 60px;
 }
 
@@ -128,6 +129,10 @@ h5 {
 p {
   margin-top: 0;
   padding-top: 0;
+}
+
+.color-dark {
+  color: var(--color-dark);
 }
 
 .color-main {
@@ -157,7 +162,7 @@ p {
 .cd-programming-img {
   position: absolute;
   top: 55px;
-  right: 426px;
+  right: -270px;
 
   height: 525px;
 }
@@ -171,6 +176,8 @@ p {
 }
 
 .cd-programming-link {
+  position: relative;
+
   padding: 12px 24px;
 
   color: var(--color-white);
@@ -190,6 +197,10 @@ p {
   z-index: 1;
 }
 
+.about-video .container {
+  padding-bottom: 0;
+}
+
 .about-video-h2 {
   margin-bottom: 30px;
 
@@ -198,14 +209,21 @@ p {
 
 .about-video-subtitle {
   margin-bottom: 30px;
+  margin-bottom: 500px;
 
   text-align: center;
 }
 
 .video {
+  position: absolute;
+  top: 330px;
+  left: 50%;
+
   display: block;
 
   margin: 0 auto;
+
+  transform: translateX(-50%);
 
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
@@ -213,14 +231,18 @@ p {
 /* ТРЕТЬЯ СЕКЦИЯ */
 
 .navigation {
-  min-height: 891px;
-
   background-color: var(--color-main-dark);
+}
+
+.navigation .container {
+  padding-top: 200px;
 }
 
 .navigation-item-main-title {
   font-size: 52px;
   font-family: Neucha, cursive;
+
+  line-height: 1.2em;
 }
 
 .d-flex {
@@ -240,17 +262,39 @@ p {
 }
 
 .navigation-item-main {
-  line-height: 1;
+  line-height: 60px;
 }
 
 .navigation-item {
   display: block;
   width: 350px;
-  min-height: 348px;
 
   padding: 24px;
 
   text-decoration: none;
+}
+
+.break > div {
+  line-height: 25px;
+}
+
+.break > div:nth-child(2) {
+  break-inside: avoid;
+}
+
+.footer-down > div:not(:last-child) {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.navigation-item:hover:not(:nth-child(1)) {
+  background-color: var(--color-main);
+}
+
+.navigation-item:hover:not(:nth-child(1)) > div,
+.navigation-item:hover:not(:nth-child(1)) > h3 {
+  color: var(--color-white);
 }
 
 .pg-0 {
@@ -264,21 +308,25 @@ p {
 .navigation-item-title {
   margin-bottom: 40px;
 
+  color: var(--color-main-dark);
+
   font-size: 64px;
   font-family: Neucha, cursive;
+
+  line-height: 64px;
 }
 
 .navigation-item-subtitle {
-  padding-bottom: 16px;
+  padding-bottom: 14px;
 
   color: var(--color-main);
 }
 
-/* ЧЕТВЁРТАЯ СЕКЦИЯ */
-
-.ikea-effect {
-  min-height: 905px;
+.navigation-item-text {
+  color: var(--color-main-dark);
 }
+
+/* ЧЕТВЁРТАЯ СЕКЦИЯ */
 
 .col-2 {
   column-count: 2;
@@ -302,14 +350,17 @@ p {
   margin-bottom: 30px;
 
   font-size: 60px;
+
+  line-height: 1.2;
 }
 
 .text-col {
   font-size: 34px;
+  line-height: 1.2;
 }
 
 .mb-100 {
-  margin-bottom: 100px;
+  margin-bottom: 94px;
 }
 
 .mb-20 {
@@ -329,42 +380,18 @@ p {
   text-transform: uppercase;
 }
 
-.break > div {
-  line-height: 26px;
-}
-
-.break > div:nth-child(2) {
-  break-inside: avoid;
-}
-
 /* ПЯТАЯ СЕКЦИЯ */
-
-.premature-optimization {
-  min-height: 855px;
-}
 
 .img-r-r {
   position: relative;
-  right: 22px;
+  right: 39px;
 }
 
 /* ШЕСТАЯ СЕКЦИЯ */
 
-.distortion-of-novelty {
-  position: relative;
-}
-
 /* СЕДЬМАЯ СЕКЦИЯ */
 
-.hyperbolic-depreciation {
-  position: relative;
-}
-
 /* ВОСЬМАЯ СЕКЦИЯ */
-
-.errors-in-planning {
-  position: relative;
-}
 
 /* FOOTER */
 
@@ -453,10 +480,4 @@ button::before {
 .footer-down {
   font-size: 14px;
   text-align: center;
-}
-
-.footer-down > div:not(:last-child) {
-  margin: 0;
-  margin-bottom: 16px;
-  padding: 0;
 }

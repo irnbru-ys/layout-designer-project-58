@@ -196,7 +196,7 @@ p {
 
 .about-video .head-100 {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   z-index: -1;
 
   width: 100%;
@@ -206,7 +206,7 @@ p {
 }
 
 .about-video-h2 {
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 
   text-align: center;
 }

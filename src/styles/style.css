@@ -190,6 +190,21 @@ p {
   z-index: 1;
 }
 
+.about-video .container {
+  padding-bottom: 0;
+}
+
+.about-video .head-100 {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100px;
+
+  background-color: var(--color-main-dark);
+}
+
 .about-video-h2 {
   margin-bottom: 30px;
 

@@ -261,7 +261,7 @@ p {
 .navigation-item {
   display: block;
   width: 350px;
-  height: 348px;
+  height: 343px;
 
   padding: 24px;
 
@@ -269,15 +269,15 @@ p {
 }
 
 .navigation-item:nth-child(1) {
-  height: 323px;
+  height: 318px;
 }
 
 .navigation-item:nth-child(2) {
-  height: 323px;
+  height: 318px;
 }
 
 .navigation-item:nth-child(3) {
-  height: 323px;
+  height: 318px;
 }
 
 .pg-0 {
@@ -296,11 +296,11 @@ p {
   font-size: 64px;
   font-family: Neucha, cursive;
 
-  line-height: 0.8;
+  line-height: 1;
 }
 
 .navigation-item-subtitle {
-  padding-bottom: 16px;
+  padding-bottom: 14px;
 
   color: var(--color-main);
 }

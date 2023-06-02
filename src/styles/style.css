@@ -206,7 +206,7 @@ p {
 }
 
 .about-video-h2 {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   text-align: center;
 }
@@ -279,6 +279,8 @@ p {
 .navigation-item-title {
   margin-bottom: 40px;
 
+  color: var(--color-main-dark);
+
   font-size: 64px;
   font-family: Neucha, cursive;
 }
@@ -287,6 +289,10 @@ p {
   padding-bottom: 16px;
 
   color: var(--color-main);
+}
+
+.navigation-item-text {
+  color: var(--color-main-dark);
 }
 
 /* ЧЕТВЁРТАЯ СЕКЦИЯ */

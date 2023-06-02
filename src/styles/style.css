@@ -337,14 +337,17 @@ p {
   margin-bottom: 30px;
 
   font-size: 60px;
+
+  line-height: 1.2;
 }
 
 .text-col {
   font-size: 34px;
+  line-height: 1.2;
 }
 
 .mb-100 {
-  margin-bottom: 100px;
+  margin-bottom: 94px;
 }
 
 .mb-20 {
@@ -365,7 +368,7 @@ p {
 }
 
 .break > div {
-  line-height: 26px;
+  line-height: 25px;
 }
 
 .break > div:nth-child(2) {

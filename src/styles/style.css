@@ -177,6 +177,8 @@ p {
 }
 
 .cd-programming-link {
+  position: relative;
+
   padding: 12px 24px;
 
   color: var(--color-white);
@@ -186,6 +188,7 @@ p {
   text-decoration: none;
 
   background-color: var(--color-main);
+
 }
 
 /* ВТОРАЯ СЕКЦИЯ */

@@ -194,17 +194,6 @@ p {
   padding-bottom: 0;
 }
 
-.about-video .head-100 {
-  position: absolute;
-  bottom: -1px;
-  z-index: -1;
-
-  width: 100%;
-  height: 100px;
-
-  background-color: var(--color-main-dark);
-}
-
 .about-video-h2 {
   margin-bottom: 30px;
 
@@ -213,12 +202,19 @@ p {
 
 .about-video-subtitle {
   margin-bottom: 30px;
+  margin-bottom: 502px;
 
   text-align: center;
 }
 
 .video {
   display: block;
+
+  position: absolute;
+  top: 325px;
+  left: 50%;
+  transform: translateX(-50%);
+  
 
   margin: 0 auto;
 
@@ -231,6 +227,10 @@ p {
   min-height: 891px;
 
   background-color: var(--color-main-dark);
+}
+
+.navigation .container {
+  padding-top: 200px;
 }
 
 .navigation-item-main-title {

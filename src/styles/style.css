@@ -210,7 +210,7 @@ p {
 
 .about-video-subtitle {
   margin-bottom: 30px;
-  margin-bottom: 507px;
+  margin-bottom: 500px;
 
   text-align: center;
 }
@@ -232,7 +232,7 @@ p {
 /* ТРЕТЬЯ СЕКЦИЯ */
 
 .navigation {
-  min-height: 891px;
+  min-height: 991px;
 
   background-color: var(--color-main-dark);
 }
@@ -263,7 +263,7 @@ p {
 }
 
 .navigation-item-main {
-  line-height: 1.2;
+  line-height: 60px;
 }
 
 .navigation-item {
@@ -277,15 +277,15 @@ p {
 }
 
 .navigation-item:nth-child(1) {
-  height: 318px;
+  height: 325px;
 }
 
 .navigation-item:nth-child(2) {
-  height: 318px;
+  height: 325px;
 }
 
 .navigation-item:nth-child(3) {
-  height: 318px;
+  height: 325px;
 }
 
 .pg-0 {
@@ -304,7 +304,7 @@ p {
   font-size: 64px;
   font-family: Neucha, cursive;
 
-  line-height: 1;
+  line-height: 64px;
 }
 
 .navigation-item-subtitle {
@@ -386,6 +386,8 @@ p {
 /* ПЯТАЯ СЕКЦИЯ */
 
 .premature-optimization {
+  position: relative;
+
   min-height: 855px;
 }
 
